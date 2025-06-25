@@ -4,12 +4,12 @@ const questions = [
   {
     id: 1,
     question: "What type of clinic is this?",
-    options: ["Dental", "Veterinary", "General Practice"],
+    options: ["Dental", "Veterinary", "General Practice", "Retail Pharmacy"],
   },
   {
     id: 2,
     question: "What is the size of your facility?",
-    options: ["Small", "Medium", "Large"],
+    options: ["Small(10-15)", "Medium(40-50)", "Large(100+)"],
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export default function Questionnaire() {
     return (
       <div>
         <h2>Recommended Supplies</h2>
-        <p>Based on your answers:</p>
+        <p>Based on your answers: </p>
         <ul>
           {Object.entries(answers).map(([id, answer]) => (
             <li key={id}>
@@ -39,7 +39,7 @@ export default function Questionnaire() {
             </li>
           ))}
         </ul>
-        <p>We’ll show product recommendations here in the future.</p>
+        <p>We’ll show product recommendations here in the future!</p>
       </div>
     );
   }
